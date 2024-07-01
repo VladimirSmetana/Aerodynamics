@@ -22,7 +22,10 @@ class geometry
 private:
 	std::vector<element> elem;
 	double full_length;
+public:
 	double full_round_area;
+	double midel_diameter;
+	double midel_area;
 	double const PI = 3.141592653589793;
 
 public:

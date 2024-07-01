@@ -13,6 +13,7 @@ void geometry::set_length(double l1, double l2, double l3)
 	elem[0].elem_length = l1;
 	elem[1].elem_length = l2;
 	elem[2].elem_length = l3;
+	pre_calculations();
 }
 
 void geometry::set_length(double l1, double l2, double l3, double l4)
@@ -21,6 +22,7 @@ void geometry::set_length(double l1, double l2, double l3, double l4)
 	elem[1].elem_length = l2;
 	elem[2].elem_length = l3;
 	elem[3].elem_length = l4;
+	pre_calculations();
 }
 
 void geometry::set_diameter(double d1, double d2, double d3)
@@ -70,8 +72,8 @@ void geometry::pre_calculations()
 		{
 			elem[i].ratio = elem[i].elem_length / elem[i].lower_diameter;
 		}
-		
-
 	}
+	midel_diameter = elem.back().upper_diameter;
+	midel_area = elem.back().lower_area;
 	std::cout << full_length << std::endl;
 }
