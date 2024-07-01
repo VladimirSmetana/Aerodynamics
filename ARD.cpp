@@ -2,26 +2,17 @@
 //
 
 #include <iostream>
-
-struct input
-{
-
-};
-
-void set_data()
-{
-    input in;
-}
-
-void pre_calculations()
-{
-
-}
+#include "geometry.h"
 
 int main()
 {
-         //set_data(20, 10, 4, 4);
-        std::cout << "Hello World!\n";
+    geometry G;
+    G.set_elnumber(4);
+    G.set_diameter(3.7, 3.7, 4.1, 4.1);
+    G.set_length(6, 7, 2, 15);
+    G.pre_calculations();
+
+    std::cout << "Hello World!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
