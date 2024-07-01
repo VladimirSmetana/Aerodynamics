@@ -3,6 +3,7 @@
 
 class drag_force : public friction
 {
-
+public:
+	void calculate_CX();
 };
 
