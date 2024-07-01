@@ -1,22 +1,29 @@
 #pragma once
 #include <vector>
 #include <iostream>
+#include <cmath>
+
 
 struct element
 {
 	double upper_diameter;
 	double lower_diameter;
 	double elem_length;
+	double virtual_length;
 	double ratio;
+	double round_area;
+	double lower_area;
+	double base_line;
 };
 
 
 class geometry
 {
 private:
-	//std::vector<double> length; 
-	//std::vector<double> diameter;
 	std::vector<element> elem;
+	double full_length;
+	double full_round_area;
+	double const PI = 3.141592653589793;
 
 public:
 	void set_elnumber(int n);
