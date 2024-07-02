@@ -1,6 +1,12 @@
 #include "geometry.h"
 #include <math.h>
 
+double geometry::min(double x, double y)
+{
+	if (x < y) return x;
+	if (y < x) return y;
+}
+
 void geometry::set_elnumber(int n)
 {
 	//length.resize(n);

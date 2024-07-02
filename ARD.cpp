@@ -11,14 +11,14 @@ int main()
     G.set_elnumber(4);
     G.set_diameter(3.7, 3.7, 4.1, 4.1);
     G.set_length(6, 7, 2, 15);
-    double velocity = 2000;
-    double altitude = 10;
+    double velocity = 300;
+    double altitude = 0.1;
 
 
     atmosphere A(altitude*1000);
-    double Mah = velocity / A.get_SV();
+    double Mah = 0.1;//velocity / A.get_SV();
 
-    G.calculate_CXY(Mah, A.get_SV(), A.get_n());
+    G.calculate_CXY(Mah, A.get_SV(), A.get_dyn());
 
     std::cout << "Hello World!\n";
 }

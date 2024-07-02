@@ -12,6 +12,12 @@
             if (H >= HT[i - 1] && H < HT[i]) { Tm = (TMM[i - 1]) + (H - HT[i - 1]) * (TMM[i] - TMM[i - 1]) / (HT[i] - HT[i - 1]); };
         }
 
+        for (int i = 1; i < 11; i++)
+        {
+            if (H >= dynH[i - 1] && H < dynH[i]) { dyn = (dynT[i - 1]) + (H - dynH[i - 1]) * (dynT[i] - dynT[i - 1]) / (dynH[i] - dynH[i - 1]); };
+            if (H > 80000) dyn = 71600;
+        }
+        dyn *= pow(10, -5);
 
         if (H<94000)
         {
@@ -46,6 +52,7 @@
             lsred = 2.332376 * pow(10, -5) * T / P;
             omega = 6.238629 * pow(10, 6) * P / sqrt(T * Mol);
             lamb = (2.648151 * pow(10, -3) * pow(T, 3 / 2)) / (T + 245.4 * pow(10, -(12 / T)));
+            //dyn = lamb / po;
         }
         g = gc * pow(R / (R + H), 2);
     }
@@ -77,4 +84,9 @@
     double atmosphere::get_SV()
     {
         return a;
+    }
+
+    double atmosphere::get_dyn()
+    {
+        return dyn;
     }

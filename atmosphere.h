@@ -15,6 +15,10 @@ class atmosphere
     double A[5];
 
     double HT[15]{1     ,  11019,  32000 , 47350 , 71802 , 86152 , 104128, 120000 , 140000, 160000, 200000, 325000, 400000, 600000, 1200000};
+
+    double dynH[11]{ 1, 1000, 5000, 10000, 12000, 14000, 20000, 32000, 40000, 60000, 80000 };
+    double dynT[11]{ 1.46, 1.58, 2.21, 3.53, 4.56, 6.24, 16, 110, 401, 5110, 71600};
+
     double TT[15]{288.15,  216.65, 228.65, 270.65, 214.65, 186.65, 203.81, 334.417, 559.6,  695.6,  834.4,  941.9,  984.65, 995.9,  1000};
     double TMM[8]{288.15,  216.65, 228.65, 270.65, 214.65, 186.65, 212.0 , 380.60 };
     double dHT[14];
@@ -44,12 +48,13 @@ class atmosphere
         hi = 1.4,
         b = 0.365 * pow(10, -9),
         R = 6371000,
-        Hp = (R * H) / (R + H);
+        Hp = (R * H) / (R + H),
+        dync = 14.607 * pow(10, -6);
 
 
         double Hs;
         double Pap;
-        double Mol = Mc, g = gc, T = Tc, Tm = Tc * Mc / Mol, P = pc, n = nc, yyd = yc, a = ac, omega = omegac;
+        double Mol = Mc, g = gc, T = Tc, Tm = Tc * Mc / Mol, P = pc, n = nc, yyd = yc, a = ac, omega = omegac, dyn = dync;
         double t;
         double const PI =  3.1415926535;
         double D = 2.66;
@@ -64,4 +69,5 @@ class atmosphere
         double get_density();
         double get_AOG();
         double get_SV();
+        double get_dyn();
     };
