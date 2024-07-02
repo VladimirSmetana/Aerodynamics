@@ -14,11 +14,20 @@ int main()
     double velocity = 300;
     double altitude = 0.1;
 
-
-    atmosphere A(altitude*1000);
     double Mah = 0.1;//velocity / A.get_SV();
+    double arrayMah[15]{ 0.1, 0.3, 0.5, 0.7, 0.9, 1.0, 1.3, 1.5, 2, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0};
+    double arrayH[5]{ 0.1, 10, 20, 40, 60 };
 
-    G.calculate_CXY(Mah, A.get_SV(), A.get_dyn());
+    for (int j = 0; j < 5; j++)
+    {
+        atmosphere A(arrayH[j] * 1000);
+        for (int i = 0; i < 15; i++)
+            {
+                G.calculate_CXY(arrayMah[i], A.get_SV(), A.get_dyn());
+            }
+        std::cout << std::endl;
+    }
+
 
     std::cout << "Hello World!\n";
 }

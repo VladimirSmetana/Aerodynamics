@@ -81,5 +81,4 @@ void geometry::pre_calculations()
 	}
 	midel_diameter = elem.back().upper_diameter;
 	midel_area = elem.back().lower_area;
-	std::cout << full_length << std::endl;
 }
