@@ -62,10 +62,19 @@ void geometry::pre_calculations()
 {
 	for (int i = 0; i < elem.size(); i++)
 	{
+		if (i == 0)
+		{
+			elem[i].base_line = 2 * PI * sqrt(pow(elem[i].elem_length, 2) + pow(elem[i].upper_diameter / 2, 2));
+			elem[i].round_area = 2 * PI * elem[i].elem_length * elem[i].upper_diameter / 2 + PI * pow(elem[i].elem_length, 2);
+		}
+		else
+		{
+			elem[i].base_line = sqrt(pow(elem[i].elem_length, 2) + pow(elem[i].lower_diameter - elem[i].upper_diameter, 2) / 4);
+			elem[i].round_area = PI * (elem[i].upper_diameter + elem[i].lower_diameter) * elem[i].base_line / 2;
+		}
+
 		elem[i].lower_area = PI * pow(elem[i].upper_diameter,2)/4;
-		elem[i].base_line = sqrt(pow(elem[i].elem_length, 2) + pow(elem[i].lower_diameter - elem[i].upper_diameter, 2) / 4);
 		elem[i].virtual_length = elem[i].elem_length + elem[i].elem_length / (elem[i].lower_diameter / elem[i].upper_diameter  - 1);
-		elem[i].round_area = PI * (elem[i].upper_diameter + elem[i].lower_diameter) * elem[i].base_line / 2;
 
 		full_length += elem[i].elem_length;
 		full_round_area += elem[i].round_area;

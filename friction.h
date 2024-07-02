@@ -1,6 +1,6 @@
 #pragma once
 #include "geometry.h"
-class friction: public geometry
+class friction: virtual public geometry
 {
 	private:
 		double const h_s = 8 * pow(10, -6);
@@ -14,7 +14,7 @@ class friction: public geometry
 		void stream_calc(double Re, double Mah);
 
 	public:
-		void fricalc(double Mah, double SS, double nu);
+		double fricalc(double Mah, double SS, double nu);
 		double C_fric;
 };
 

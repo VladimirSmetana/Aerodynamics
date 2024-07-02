@@ -15,6 +15,7 @@ struct element
 	double round_area;
 	double lower_area;
 	double base_line;
+	double C_fric;
 };
 
 

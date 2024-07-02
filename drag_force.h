@@ -2,9 +2,9 @@
 #include "friction.h"
 #include "pressure.h"
 
-class drag_force : public friction
+class drag_force : public friction, public pressure
 {
 public:
-	void calculate_CX(double Mah, double SS, double nu);
+	double calculate_CX(double Mah, double SS, double nu);
 };
 

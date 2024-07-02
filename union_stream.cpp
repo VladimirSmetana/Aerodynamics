@@ -2,5 +2,7 @@
 
 void union_stream::calculate_CXY(double Mah, double SS, double nu)
 {
-	calculate_CX(Mah, SS, nu);
+
+
+	CX = calculate_CX(Mah, SS, nu);
 }

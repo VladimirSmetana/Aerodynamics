@@ -29,11 +29,18 @@ void friction::stream_calc(double Re, double Mah)
 	}
 }
 
-void friction::fricalc(double Mah, double SS, double nu)
+double friction::fricalc(double Mah, double SS, double nu)
 {
 	area_ratio = full_round_area / midel_area;
 	Re = SS * Mah * full_length / nu;
 	stream_calc(Re, Mah);
+
+	for (int i = 0; i < elem.size(); i++)
+	{
+		elem[i].C_fric = elem[i].round_area * cif * num / 2;
+		std::cout << elem[i].C_fric << std::endl;
+	}
+
 	C_fric = area_ratio * cif * num/2;
-	std::cout << C_fric << std::endl;
+	return C_fric;
 }
