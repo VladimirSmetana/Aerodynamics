@@ -73,7 +73,8 @@ void geometry::pre_calculations()
 			elem[i].round_area = PI * (elem[i].upper_diameter + elem[i].lower_diameter) * elem[i].base_line / 2;
 		}
 
-		elem[i].lower_area = PI * pow(elem[i].upper_diameter,2)/4;
+		elem[i].upper_area = PI * pow(elem[i].upper_diameter, 2) / 4;
+		elem[i].lower_area = PI * pow(elem[i].lower_diameter,2)/4;
 		elem[i].virtual_length = elem[i].elem_length + elem[i].elem_length / (elem[i].lower_diameter / elem[i].upper_diameter  - 1);
 
 		full_length += elem[i].elem_length;

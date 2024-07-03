@@ -38,7 +38,6 @@ double friction::fricalc(double Mah, double SS, double nu)
 	for (int i = 0; i < elem.size(); i++)
 	{
 		elem[i].C_fric = elem[i].round_area * cif * num / 2;
-		std::cout << elem[i].C_fric << std::endl;
 	}
 
 	C_fric = area_ratio * cif * num/2;

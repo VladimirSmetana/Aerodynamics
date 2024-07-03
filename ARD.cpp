@@ -20,13 +20,13 @@ int main()
 
 
 
-    for (int j = 0; j < 1; j++)
+    for (int j = 0; j < 5; j++)
     {
         atmosphere A(arrayH[j] * 1000);
-        for (int i = 0; i < 1; i++)
+        for (int i = 0; i < 15; i++)
             {
                 G.calculate_CXY(arrayMah[i], A.get_SV(), A.get_dyn());
-                //std::cout << G.CX << std::endl;
+                std::cout << G.CX << std::endl;
             }
         std::cout << std::endl;
     }

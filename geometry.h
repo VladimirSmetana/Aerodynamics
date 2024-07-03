@@ -13,9 +13,14 @@ struct element
 	double virtual_length;
 	double ratio;
 	double round_area;
+	double upper_area;
 	double lower_area;
 	double base_line;
+
 	double C_fric;
+	double C_pres;
+	double CX;
+
 };
 
 
