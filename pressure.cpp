@@ -1,7 +1,38 @@
 #include "pressure.h"
 double pressure::prescalc(double Mah)
 {
-	return un_triangle_pres(Mah) + head_Cpres(Mah);
+	return un_triangle_pres(Mah) + head_Cpres(Mah) + bottom_pres(Mah);
+}
+
+
+double pressure::bottom_pres(double Mah)
+{
+
+	if (Mah < 1)
+	{
+		return 0.0155 / sqrt(cif*num*full_ratio);
+	}
+	else
+	{
+		const int N = 12;
+		double Mah_v[N];
+		double H_current[N];
+
+		double C_head = 0;
+
+		std::ifstream Hco;
+		Hco.open("HeadPressure.txt");
+
+		for (int i = 0; i < N; i++)
+		{
+			Hco >> Mah_v[i];
+			Hco >> H_current[i];
+			if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i >= 1) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+		}
+
+		Hco.close();
+		return C_head;
+	}
 }
 
 double pressure::head_Cpres(double Mah)

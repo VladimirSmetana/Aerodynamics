@@ -80,6 +80,7 @@ void geometry::pre_calculations()
 		full_length += elem[i].elem_length;
 		full_round_area += elem[i].round_area;
 
+
 		if (elem[i].upper_diameter < elem[i].lower_diameter && abs(elem[i].upper_diameter)>0.1)
 		{
 			elem[i].ratio = elem[i].virtual_length / elem[i].lower_diameter;
@@ -89,6 +90,7 @@ void geometry::pre_calculations()
 			elem[i].ratio = elem[i].elem_length / elem[i].lower_diameter;
 		}
 	}
+	full_ratio = full_length / elem.back().upper_diameter;
 	midel_diameter = elem.back().upper_diameter;
 	midel_area = elem.back().lower_area;
 }

@@ -31,8 +31,11 @@ public:
 	std::vector<element> elem;
 	double full_length;
 	double full_round_area;
+	double full_ratio;
 	double midel_diameter;
 	double midel_area;
+	double cif;
+	double num;
 	double const PI = 3.141592653589793;
 
 public:
