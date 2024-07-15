@@ -34,7 +34,7 @@ double lift_force::head_lift(double Mah)
 
 	std::ifstream Hco;
 
-	Hco.open("HeadNormal.txt");
+	Hco.open("resources/HeadNormal.txt");
 
 
 
@@ -150,7 +150,7 @@ double lift_force::triangle_lift(double Mah, double ratio, int index)
 
 	std::ifstream Hco;
 
-	Hco.open("TriangleNormal.txt");
+	Hco.open("resources/TriangleNormal.txt");
 
 	double C_head = 0;
 

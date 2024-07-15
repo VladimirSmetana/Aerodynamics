@@ -1,5 +1,5 @@
 #pragma once
-#include "geometry.h"
+#include "../geometry.h"
 #include <iostream>
 #include <fstream>
 #include <string>
