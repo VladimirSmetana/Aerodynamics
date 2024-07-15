@@ -7,6 +7,11 @@ double geometry::min(double x, double y)
 	if (y < x) return y;
 }
 
+double geometry::sqr(double x)
+{
+	return x * x;
+}
+
 void geometry::set_elnumber(int n)
 {
 	//length.resize(n);

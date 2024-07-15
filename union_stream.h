@@ -1,7 +1,8 @@
 #pragma once
 #include "drag_force.h"
+#include "lift_force.h"
 
-class union_stream: public drag_force
+class union_stream: public drag_force, public lift_force
 {
 public:
 	double CX;

@@ -20,7 +20,7 @@ struct element
 	double C_fric;
 	double C_pres;
 	double CX;
-
+	double CY;
 };
 
 
@@ -50,5 +50,6 @@ public:
 	void pre_calculations();
 
 	double min(double x, double y);
+	double sqr(double x);
 };
 

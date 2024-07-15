@@ -26,7 +26,8 @@ int main()
         for (int i = 0; i < 15; i++)
             {
                 G.calculate_CXY(arrayMah[i], A.get_SV(), A.get_dyn());
-                std::cout << G.CX << std::endl;
+                //std::cout << G.CX << std::endl;
+                std::cout << G.CY << std::endl;
             }
         std::cout << std::endl;
     }

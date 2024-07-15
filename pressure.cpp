@@ -126,7 +126,7 @@ double pressure::un_triangle_pres(double Mah)
 	double res = 0;
 	for (int i = 1; i < elem.size(); i++)
 	{
-		elem[i].C_pres = triangle_Cpres(Mah, elem[i].ratio) * (1 - elem[0].upper_area / elem[0].lower_area);
+		elem[i].C_pres = triangle_Cpres(Mah, elem[i].ratio) * (1 - elem[i].upper_area / elem[i].lower_area);
 		res += elem[i].C_pres;
 	}
 	return res;
@@ -195,6 +195,6 @@ double pressure::triangle_Cpres(double Mah, double ratio)
 
 
 	Hco.close();
-	elem[0].C_pres = C_head;
+
 	return C_head;
 }
