@@ -52,6 +52,7 @@ double pressure::head_Cpres(double Mah)
 	double H_4[N];
 	double H_5[N];
 
+
 	std::ifstream Hco;
 
 	Hco.open("resources/HeadPressure.txt");
@@ -72,6 +73,8 @@ double pressure::head_Cpres(double Mah)
 		Hco >> H_4[i];
 		Hco >> H_5[i];
 
+
+		
 		if (elem[0].ratio >= 0 && elem[0].ratio < 0.25)
 		{
 			H_current[i] = H_0[i];

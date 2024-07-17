@@ -171,10 +171,6 @@ double lift_force::triangle_lift(double Mah, double ratio, int index)
 		Hco >> H_3[i];
 		Hco >> H_4[i];
 
-		if (ratio <= 0)
-		{
-			return free_triangle_lift(index);
-		}
 			
 		if (ratio > 0 && ratio < 1)
 		{
