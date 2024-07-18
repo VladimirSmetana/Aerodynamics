@@ -1,0 +1,10 @@
+G:/Aerodynamics/out/build/Visual Studio Community 2022 Release - amd64_x86/CMakeFiles/union_stream.dir
+G:/Aerodynamics/out/build/Visual Studio Community 2022 Release - amd64_x86/CMakeFiles/geometry.dir
+G:/Aerodynamics/out/build/Visual Studio Community 2022 Release - amd64_x86/CMakeFiles/atmosphere.dir
+G:/Aerodynamics/out/build/Visual Studio Community 2022 Release - amd64_x86/CMakeFiles/lift_force.dir
+G:/Aerodynamics/out/build/Visual Studio Community 2022 Release - amd64_x86/CMakeFiles/friction.dir
+G:/Aerodynamics/out/build/Visual Studio Community 2022 Release - amd64_x86/CMakeFiles/pressure.dir
+G:/Aerodynamics/out/build/Visual Studio Community 2022 Release - amd64_x86/CMakeFiles/drag_force.dir
+G:/Aerodynamics/out/build/Visual Studio Community 2022 Release - amd64_x86/CMakeFiles/ARD.dir
+G:/Aerodynamics/out/build/Visual Studio Community 2022 Release - amd64_x86/CMakeFiles/ALL_BUILD.dir
+G:/Aerodynamics/out/build/Visual Studio Community 2022 Release - amd64_x86/CMakeFiles/ZERO_CHECK.dir
