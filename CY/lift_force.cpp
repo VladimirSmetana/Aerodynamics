@@ -1,7 +1,7 @@
 #include "lift_force.h"
 
 
-double lift_force::calculate_CY(double Mah, double SS, double nu)
+double lift_force::calculate_CY(double Mah)
 {
 	return head_lift(Mah) + un_triangle_lift(Mah);
 }
@@ -34,7 +34,7 @@ double lift_force::head_lift(double Mah)
 
 	std::ifstream Hco;
 
-	Hco.open("resources/HeadNormal.txt");
+	Hco.open("../resources/HeadNormal.txt");
 
 
 
@@ -150,7 +150,7 @@ double lift_force::triangle_lift(double Mah, double ratio, int index)
 
 	std::ifstream Hco;
 
-	Hco.open("resources/TriangleNormal.txt");
+	Hco.open("../resources/TriangleNormal.txt");
 
 	double C_head = 0;
 

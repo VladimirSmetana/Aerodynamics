@@ -29,8 +29,8 @@ class geometry
 
 public:
 	std::vector<element> elem;
-	double full_length;
-	double full_round_area;
+	double full_length = 0;
+	double full_round_area = 0;
 	double full_ratio;
 	double midel_diameter;
 	double midel_area;

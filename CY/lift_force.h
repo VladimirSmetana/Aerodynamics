@@ -6,7 +6,7 @@
 class lift_force: virtual public geometry
 {
 	public:
-		double calculate_CY(double Mah, double SS, double nu);
+		double calculate_CY(double Mah);
 		double head_lift(double Mah);
 		double triangle_lift(double Mah, double ratio, int index);
 		double un_triangle_lift(double Mah);

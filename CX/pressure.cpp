@@ -1,6 +1,7 @@
 #include "pressure.h"
 double pressure::prescalc(double Mah)
 {
+			                	               
 	return un_triangle_pres(Mah) + head_Cpres(Mah) + bottom_pres(Mah);
 }
 
@@ -21,7 +22,7 @@ double pressure::bottom_pres(double Mah)
 		double C_head = 0;
 
 		std::ifstream Hco;
-		Hco.open("resources/HeadPressure.txt");
+		Hco.open("../resources/HeadPressure.txt");
 
 		for (int i = 0; i < N; i++)
 		{
@@ -55,7 +56,7 @@ double pressure::head_Cpres(double Mah)
 
 	std::ifstream Hco;
 
-	Hco.open("resources/HeadPressure.txt");
+	Hco.open("../resources/HeadPressure.txt");
 
 	double C_head = 0;
 
@@ -126,6 +127,7 @@ double pressure::head_Cpres(double Mah)
 
 double pressure::un_triangle_pres(double Mah)
 {
+
 	double res = 0;
 	for (int i = 1; i < elem.size(); i++)
 	{
@@ -151,7 +153,7 @@ double pressure::triangle_Cpres(double Mah, double ratio)
 
 	std::ifstream Hco;
 
-	Hco.open("resources/TrianglePressure.txt");
+	Hco.open("../resources/TrianglePressure.txt");
 
 	double C_head = 0;
 

@@ -22,13 +22,17 @@ void geometry::set_elnumber(int n)
 void geometry::set_length(double l1, double l2, double l3)
 {
 	elem[0].elem_length = l1;
+
+
 	elem[1].elem_length = l2;
 	elem[2].elem_length = l3;
+
 	pre_calculations();
 }
 
 void geometry::set_length(double l1, double l2, double l3, double l4)
 {
+
 	elem[0].elem_length = l1;
 	elem[1].elem_length = l2;
 	elem[2].elem_length = l3;
@@ -93,6 +97,7 @@ void geometry::pre_calculations()
 		else 
 		{
 			elem[i].ratio = elem[i].elem_length / elem[i].lower_diameter;
+
 		}
 	}
 	full_ratio = full_length / elem.back().upper_diameter;

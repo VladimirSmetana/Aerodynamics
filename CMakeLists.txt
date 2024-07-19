@@ -19,4 +19,6 @@ add_library(drag_force CX/drag_force.h CX/drag_force.cpp)
 
 add_executable(ARD ARD.cpp )
 
-target_link_libraries(ARD PRIVATE union_stream geometry atmosphere lift_force drag_force pressure friction)
+target_include_directories(ARD PUBLIC resources)
+
+target_link_libraries(ARD PUBLIC union_stream geometry atmosphere lift_force drag_force pressure friction)

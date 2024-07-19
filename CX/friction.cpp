@@ -8,6 +8,7 @@ void friction::stream_calc(double Re, double Mah)
 	{
 		cif = 2.656 / sqrt(Re);
 		num = pow(1 + 0.1 * pow(Mah, 0.1), -0.125);
+
 	}
 	if (Re > 485000 && Re < 10000000)
 	{
@@ -21,10 +22,12 @@ void friction::stream_calc(double Re, double Mah)
 		else cif = 2.656 / sqrt(Re);
 
 		num = pow(1 + 0.1 * pow(Mah, 0.1), -2 / 3);
+
 	}
 	if (Re >= 10000000)
 	{
 		cif = 0.91 / pow(log10(Re), 2.58);
+
 		num = pow(1 + 0.1 * pow(Mah, 0.1), -2/3);
 	}
 }
@@ -33,10 +36,12 @@ double friction::fricalc(double Mah, double SS, double nu)
 {
 	area_ratio = full_round_area / midel_area;
 	Re = SS * Mah * full_length / nu;
+
 	stream_calc(Re, Mah);
 
 	for (int i = 0; i < elem.size(); i++)
 	{
+
 		elem[i].C_fric = elem[i].round_area * cif * num / 2;
 	}
 

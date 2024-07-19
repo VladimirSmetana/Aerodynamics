@@ -4,7 +4,6 @@
 #include <iostream>
 
 #include "union_stream.h"
-
 int main()
 {
     union_stream G;
@@ -26,14 +25,12 @@ int main()
         for (int i = 0; i < 15; i++)
             {
                 G.calculate_CXY(arrayMah[i], A.get_SV(), A.get_dyn());
-                //std::cout << G.CX << std::endl;
-                std::cout << G.CX << std::endl;
+
+
             }
         std::cout << std::endl;
     }
 
-
-    std::cout << "Hello World!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
