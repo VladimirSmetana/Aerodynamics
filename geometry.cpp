@@ -12,12 +12,24 @@ double geometry::sqr(double x)
 	return x * x;
 }
 
+double geometry::rad(double x)
+{
+	return x/57.3;
+}
+
+void geometry::std_print(double x)
+{
+	std::cout << x << std::endl;
+}
+
 void geometry::set_elnumber(int n)
 {
 	//length.resize(n);
 	//diameter.resize(n);
 	elem.resize(n);
 }
+
+
 
 void geometry::set_length(double l1, double l2, double l3)
 {

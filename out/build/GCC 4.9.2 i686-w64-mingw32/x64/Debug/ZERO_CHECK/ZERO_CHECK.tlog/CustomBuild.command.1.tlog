@@ -1,0 +1,10 @@
+^G:\AERODYNAMICS\OUT\BUILD\GCC 4.9.2 I686-W64-MINGW32\CMAKEFILES\A0E46D65A4E74F0C50ECDFDB64CA732A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SG:/Aerodynamics "-BG:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/ARD.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

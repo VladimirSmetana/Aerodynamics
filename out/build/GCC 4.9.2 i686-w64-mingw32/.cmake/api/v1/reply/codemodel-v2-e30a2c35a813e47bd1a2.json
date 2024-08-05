@@ -1,0 +1,552 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ARD",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-027c20aaa43fe7876e78.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ARD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ARD-Debug-aa6ca88690a168573795.json",
+					"name" : "ARD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-11561eff227dda7ea2ec.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "atmosphere::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-atmosphere-Debug-2cabe3fd2fe78dfedf9b.json",
+					"name" : "atmosphere",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drag_force::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drag_force-Debug-77d433b0a37466b698c6.json",
+					"name" : "drag_force",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "friction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-friction-Debug-39cb870221c9aea4684d.json",
+					"name" : "friction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "geometry::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-geometry-Debug-77de0f1eec2715075a17.json",
+					"name" : "geometry",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inductance::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inductance-Debug-f72176eea49214f212b9.json",
+					"name" : "inductance",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lift_force::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lift_force-Debug-9bf4e509082fddc5fdca.json",
+					"name" : "lift_force",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pressure::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pressure-Debug-7801fe31ebaaaae184f2.json",
+					"name" : "pressure",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "union_stream::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-union_stream-Debug-d6b4e8f4468d12564cca.json",
+					"name" : "union_stream",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ARD",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-027c20aaa43fe7876e78.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ARD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ARD-Release-1c46bc6411a6a3439952.json",
+					"name" : "ARD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-11561eff227dda7ea2ec.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "atmosphere::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-atmosphere-Release-c002bfa06bf965f99191.json",
+					"name" : "atmosphere",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drag_force::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drag_force-Release-a8efbef09113c0871b70.json",
+					"name" : "drag_force",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "friction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-friction-Release-9d1419d83db4470a1581.json",
+					"name" : "friction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "geometry::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-geometry-Release-af965d94eb839d534638.json",
+					"name" : "geometry",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inductance::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inductance-Release-f2a9641c67b048262bc1.json",
+					"name" : "inductance",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lift_force::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lift_force-Release-52f1c8ad16f91d35a8c9.json",
+					"name" : "lift_force",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pressure::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pressure-Release-14d59f751f444a1b67b5.json",
+					"name" : "pressure",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "union_stream::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-union_stream-Release-db4772b08faf2b9c1367.json",
+					"name" : "union_stream",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ARD",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-027c20aaa43fe7876e78.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ARD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ARD-MinSizeRel-9cd7783d692c646d33db.json",
+					"name" : "ARD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-11561eff227dda7ea2ec.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "atmosphere::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-atmosphere-MinSizeRel-5503e5858b2b37049726.json",
+					"name" : "atmosphere",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drag_force::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drag_force-MinSizeRel-c3dbd465cb86ec480477.json",
+					"name" : "drag_force",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "friction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-friction-MinSizeRel-03aad66536d1752f3243.json",
+					"name" : "friction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "geometry::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-geometry-MinSizeRel-31801733539d28147998.json",
+					"name" : "geometry",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inductance::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inductance-MinSizeRel-05fe157fe99b64b2b2fd.json",
+					"name" : "inductance",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lift_force::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lift_force-MinSizeRel-f44a756ee9b2616e2b61.json",
+					"name" : "lift_force",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pressure::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pressure-MinSizeRel-910fff4dcb06e77624b8.json",
+					"name" : "pressure",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "union_stream::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-union_stream-MinSizeRel-9202c90c09ef48c7ea81.json",
+					"name" : "union_stream",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ARD",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-027c20aaa43fe7876e78.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ARD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ARD-RelWithDebInfo-7133c0a7683277163220.json",
+					"name" : "ARD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-11561eff227dda7ea2ec.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "atmosphere::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-atmosphere-RelWithDebInfo-c6d3a5118acf726297d4.json",
+					"name" : "atmosphere",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drag_force::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drag_force-RelWithDebInfo-0be2bc3ab7e10a711261.json",
+					"name" : "drag_force",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "friction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-friction-RelWithDebInfo-b43aa37e2e245d9f6a8b.json",
+					"name" : "friction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "geometry::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-geometry-RelWithDebInfo-5786240226ada7806686.json",
+					"name" : "geometry",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inductance::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inductance-RelWithDebInfo-efb66fe24e140d6b7624.json",
+					"name" : "inductance",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lift_force::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lift_force-RelWithDebInfo-6aeb935cc0db7934abc7.json",
+					"name" : "lift_force",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pressure::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pressure-RelWithDebInfo-9f2360394751d0e0dfa1.json",
+					"name" : "pressure",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "union_stream::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-union_stream-RelWithDebInfo-be0958356a82264de0ab.json",
+					"name" : "union_stream",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32",
+		"source" : "G:/Aerodynamics"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

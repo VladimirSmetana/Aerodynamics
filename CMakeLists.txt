@@ -16,9 +16,19 @@ add_library(lift_force CY/lift_force.h CY/lift_force.cpp)
 add_library(friction CX/friction.h CX/friction.cpp)
 add_library(pressure CX/pressure.h CX/pressure.cpp)
 add_library(drag_force CX/drag_force.h CX/drag_force.cpp)
+add_library(inductance inductance.h inductance.cpp)
 
 add_executable(ARD ARD.cpp )
 
 target_include_directories(ARD PUBLIC resources)
 
-target_link_libraries(ARD PUBLIC union_stream geometry atmosphere lift_force drag_force pressure friction)
+target_link_libraries(ARD PUBLIC 
+union_stream 
+geometry 
+atmosphere 
+lift_force 
+drag_force 
+pressure 
+friction 
+inductance
+)

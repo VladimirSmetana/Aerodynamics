@@ -12,6 +12,7 @@ int main()
     G.set_length(7, 7, 2, 14);
     double velocity = 300;
     double altitude = 0.1;
+    double attack_angle = 5;
 
     double Mah = 0.1;//velocity / A.get_SV();
     double arrayMah[15]{ 0.1, 0.3, 0.5, 0.7, 0.9, 1.0, 1.3, 1.5, 2, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0};
@@ -24,8 +25,8 @@ int main()
         atmosphere A(arrayH[j] * 1000);
         for (int i = 0; i < 15; i++)
             {
-                G.calculate_CXY(arrayMah[i], A.get_SV(), A.get_dyn());
-
+                G.calculate_CXY(G.rad(attack_angle), arrayMah[i], A.get_SV(), A.get_dyn());
+                std::cout << G.CY << std::endl;
 
             }
         std::cout << std::endl;

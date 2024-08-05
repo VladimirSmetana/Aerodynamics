@@ -19,6 +19,7 @@ struct element
 
 	double C_fric;
 	double C_pres;
+	double C_ind;
 	double CX;
 	double CY;
 };
@@ -51,5 +52,7 @@ public:
 
 	double min(double x, double y);
 	double sqr(double x);
+	double rad(double x);	
+	void std_print(double x);
 };
 

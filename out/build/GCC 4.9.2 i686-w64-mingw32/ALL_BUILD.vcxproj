@@ -193,6 +193,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{DF6E67AD-E480-3AB9-A229-399384720570}</Project>
       <Name>geometry</Name>
     </ProjectReference>
+    <ProjectReference Include="G:\Aerodynamics\out\build\GCC 4.9.2 i686-w64-mingw32\inductance.vcxproj">
+      <Project>{B4C22DB7-85A9-39EB-86D8-7F038D473328}</Project>
+      <Name>inductance</Name>
+    </ProjectReference>
     <ProjectReference Include="G:\Aerodynamics\out\build\GCC 4.9.2 i686-w64-mingw32\lift_force.vcxproj">
       <Project>{C83EEA3D-7A53-3A73-8680-DDF61D0545B3}</Project>
       <Name>lift_force</Name>

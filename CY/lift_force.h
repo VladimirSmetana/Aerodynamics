@@ -1,9 +1,10 @@
 #pragma once
 #include "../geometry.h"
+#include "../inductance.h"
 #include <iostream>
 #include <fstream>
 #include <string>
-class lift_force: virtual public geometry
+class lift_force: public inductance
 {
 	public:
 		double calculate_CY(double Mah);

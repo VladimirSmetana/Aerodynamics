@@ -24,7 +24,7 @@ events:
       The output was:
       0
       Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
-      Сборка начата 19.07.2024 0:14:21.
+      Сборка начата 05.08.2024 16:11:29.
       
       Проект "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\3.26.4-msvc4\\CompilerIdC\\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
       PrepareForBuild:
@@ -52,7 +52,7 @@ events:
           Предупреждений: 0
           Ошибок: 0
       
-      Прошло времени 00:00:00.56
+      Прошло времени 00:00:01.30
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -78,7 +78,7 @@ events:
       The output was:
       0
       Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
-      Сборка начата 19.07.2024 0:14:22.
+      Сборка начата 05.08.2024 16:11:31.
       
       Проект "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\3.26.4-msvc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
       PrepareForBuild:
@@ -106,7 +106,7 @@ events:
           Предупреждений: 0
           Ошибок: 0
       
-      Прошло времени 00:00:00.54
+      Прошло времени 00:00:00.74
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -125,8 +125,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-qgimih"
-      binary: "G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-qgimih"
+      source: "G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-kx10jz"
+      binary: "G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-kx10jz"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -134,38 +134,38 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-qgimih
+        Change Dir: G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-kx10jz
         
-        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f1b95.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
-        Сборка начата 19.07.2024 0:14:22.
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1244f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 05.08.2024 16:11:32.
         
-        Проект "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-qgimih\\cmTC_f1b95.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Проект "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-kx10jz\\cmTC_1244f.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_f1b95.dir\\Debug\\".
-          Создание каталога "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-qgimih\\Debug\\".
-          Создание каталога "cmTC_f1b95.dir\\Debug\\cmTC_f1b95.tlog\\".
+          Создание каталога "cmTC_1244f.dir\\Debug\\".
+          Создание каталога "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-kx10jz\\Debug\\".
+          Создание каталога "cmTC_1244f.dir\\Debug\\cmTC_1244f.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_f1b95.dir\\Debug\\cmTC_f1b95.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_f1b95.dir\\Debug\\cmTC_f1b95.tlog\\unsuccessfulbuild".
+          Создание "cmTC_1244f.dir\\Debug\\cmTC_1244f.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_1244f.dir\\Debug\\cmTC_1244f.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f1b95.dir\\Debug\\\\" /Fd"cmTC_f1b95.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1244f.dir\\Debug\\\\" /Fd"cmTC_1244f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32825 для x64
           CMakeCCompilerABI.c
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f1b95.dir\\Debug\\\\" /Fd"cmTC_f1b95.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1244f.dir\\Debug\\\\" /Fd"cmTC_1244f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-qgimih\\Debug\\cmTC_f1b95.exe" /INCREMENTAL /ILK:"cmTC_f1b95.dir\\Debug\\cmTC_f1b95.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-qgimih/Debug/cmTC_f1b95.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-qgimih/Debug/cmTC_f1b95.lib" /MACHINE:X64  /machine:x64 cmTC_f1b95.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_f1b95.vcxproj -> G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-qgimih\\Debug\\cmTC_f1b95.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-kx10jz\\Debug\\cmTC_1244f.exe" /INCREMENTAL /ILK:"cmTC_1244f.dir\\Debug\\cmTC_1244f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-kx10jz/Debug/cmTC_1244f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-kx10jz/Debug/cmTC_1244f.lib" /MACHINE:X64  /machine:x64 cmTC_1244f.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_1244f.vcxproj -> G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-kx10jz\\Debug\\cmTC_1244f.exe
         FinalizeBuildStatus:
-          Файл "cmTC_f1b95.dir\\Debug\\cmTC_f1b95.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_f1b95.dir\\Debug\\cmTC_f1b95.tlog\\cmTC_f1b95.lastbuildstate".
-        Сборка проекта "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-qgimih\\cmTC_f1b95.vcxproj" завершена (целевые объекты по умолчанию).
+          Файл "cmTC_1244f.dir\\Debug\\cmTC_1244f.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_1244f.dir\\Debug\\cmTC_1244f.tlog\\cmTC_1244f.lastbuildstate".
+        Сборка проекта "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-kx10jz\\cmTC_1244f.vcxproj" завершена (целевые объекты по умолчанию).
         
         Сборка успешно завершена.
             Предупреждений: 0
             Ошибок: 0
         
-        Прошло времени 00:00:00.53
+        Прошло времени 00:00:00.58
         
       exitCode: 0
   -
@@ -177,8 +177,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-p24irh"
-      binary: "G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-p24irh"
+      source: "G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-ujrnmz"
+      binary: "G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-ujrnmz"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -186,38 +186,38 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-p24irh
+        Change Dir: G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-ujrnmz
         
-        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e04d3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
-        Сборка начата 19.07.2024 0:14:23.
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e5e15.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Версия MSBuild 17.7.2+d6990bcfa для .NET Framework
+        Сборка начата 05.08.2024 16:11:33.
         
-        Проект "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-p24irh\\cmTC_e04d3.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Проект "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-ujrnmz\\cmTC_e5e15.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_e04d3.dir\\Debug\\".
-          Создание каталога "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-p24irh\\Debug\\".
-          Создание каталога "cmTC_e04d3.dir\\Debug\\cmTC_e04d3.tlog\\".
+          Создание каталога "cmTC_e5e15.dir\\Debug\\".
+          Создание каталога "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-ujrnmz\\Debug\\".
+          Создание каталога "cmTC_e5e15.dir\\Debug\\cmTC_e5e15.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_e04d3.dir\\Debug\\cmTC_e04d3.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_e04d3.dir\\Debug\\cmTC_e04d3.tlog\\unsuccessfulbuild".
+          Создание "cmTC_e5e15.dir\\Debug\\cmTC_e5e15.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_e5e15.dir\\Debug\\cmTC_e5e15.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e04d3.dir\\Debug\\\\" /Fd"cmTC_e04d3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e5e15.dir\\Debug\\\\" /Fd"cmTC_e5e15.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.37.32825 для x64
           CMakeCXXCompilerABI.cpp
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e04d3.dir\\Debug\\\\" /Fd"cmTC_e04d3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e5e15.dir\\Debug\\\\" /Fd"cmTC_e5e15.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-p24irh\\Debug\\cmTC_e04d3.exe" /INCREMENTAL /ILK:"cmTC_e04d3.dir\\Debug\\cmTC_e04d3.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-p24irh/Debug/cmTC_e04d3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-p24irh/Debug/cmTC_e04d3.lib" /MACHINE:X64  /machine:x64 cmTC_e04d3.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_e04d3.vcxproj -> G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-p24irh\\Debug\\cmTC_e04d3.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-ujrnmz\\Debug\\cmTC_e5e15.exe" /INCREMENTAL /ILK:"cmTC_e5e15.dir\\Debug\\cmTC_e5e15.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-ujrnmz/Debug/cmTC_e5e15.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:/Aerodynamics/out/build/GCC 4.9.2 i686-w64-mingw32/CMakeFiles/CMakeScratch/TryCompile-ujrnmz/Debug/cmTC_e5e15.lib" /MACHINE:X64  /machine:x64 cmTC_e5e15.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_e5e15.vcxproj -> G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-ujrnmz\\Debug\\cmTC_e5e15.exe
         FinalizeBuildStatus:
-          Файл "cmTC_e04d3.dir\\Debug\\cmTC_e04d3.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_e04d3.dir\\Debug\\cmTC_e04d3.tlog\\cmTC_e04d3.lastbuildstate".
-        Сборка проекта "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-p24irh\\cmTC_e04d3.vcxproj" завершена (целевые объекты по умолчанию).
+          Файл "cmTC_e5e15.dir\\Debug\\cmTC_e5e15.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_e5e15.dir\\Debug\\cmTC_e5e15.tlog\\cmTC_e5e15.lastbuildstate".
+        Сборка проекта "G:\\Aerodynamics\\out\\build\\GCC 4.9.2 i686-w64-mingw32\\CMakeFiles\\CMakeScratch\\TryCompile-ujrnmz\\cmTC_e5e15.vcxproj" завершена (целевые объекты по умолчанию).
         
         Сборка успешно завершена.
             Предупреждений: 0
             Ошибок: 0
         
-        Прошло времени 00:00:00.51
+        Прошло времени 00:00:00.57
         
       exitCode: 0
 ...
