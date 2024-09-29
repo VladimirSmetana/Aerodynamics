@@ -42,11 +42,11 @@ public:
 public:
 	void set_elnumber(int n);
 
-	void set_length(double l1, double l2, double l3);
-	void set_length(double l1, double l2, double l3, double l4);
+	void set_length(const double &l1, const double &l2, const double &l3);
+	void set_length(const double &l1, const double &l2, const double &l3, const double &l4);
 
-	void set_diameter(double d1, double d2, double d3);
-	void set_diameter(double d1, double d2, double d3, double d4);
+	void set_diameter(const double &d1, const double &d2, const double &d3);
+	void set_diameter(const double &d1, const double &d2, const double &d3, const double &d4);
 
 	void pre_calculations();
 

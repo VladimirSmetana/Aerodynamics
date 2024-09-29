@@ -31,7 +31,7 @@ void geometry::set_elnumber(int n)
 
 
 
-void geometry::set_length(double l1, double l2, double l3)
+void geometry::set_length(const double &l1, const double &l2, const double &l3)
 {
 	elem[0].elem_length = l1;
 
@@ -42,7 +42,7 @@ void geometry::set_length(double l1, double l2, double l3)
 	pre_calculations();
 }
 
-void geometry::set_length(double l1, double l2, double l3, double l4)
+void geometry::set_length(const double &l1, const double &l2, const double &l3, const double &l4)
 {
 
 	elem[0].elem_length = l1;
@@ -52,7 +52,7 @@ void geometry::set_length(double l1, double l2, double l3, double l4)
 	pre_calculations();
 }
 
-void geometry::set_diameter(double d1, double d2, double d3)
+void geometry::set_diameter(const double &d1, const double &d2, const double &d3)
 {
 	elem[0].upper_diameter = 0;
 	elem[0].lower_diameter = d1;
@@ -64,7 +64,7 @@ void geometry::set_diameter(double d1, double d2, double d3)
 	elem[2].lower_diameter = d3;
 }
 
-void geometry::set_diameter(double d1, double d2, double d3, double d4)
+void geometry::set_diameter(const double &d1, const double &d2, const double &d3, const double &d4)
 {
 	elem[0].upper_diameter = 0;
 	elem[0].lower_diameter = d1;

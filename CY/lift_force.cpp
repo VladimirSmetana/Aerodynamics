@@ -3,9 +3,7 @@
 
 double lift_force::calculate_CY(double Mah)
 {
-
 	return head_lift(Mah) + un_triangle_lift(Mah);
-
 }
 
 double lift_force::head_lift(double Mah)
@@ -63,22 +61,22 @@ double lift_force::head_lift(double Mah)
 			H_current[i] = H_0[i];
 		}
 
-		if (ratio >= 0.5 && ratio < 1)
+		else if (ratio >= 0.5 && ratio < 1)
 		{
 			H_current[i] = H_05[i];
 		}
 
-		if (ratio >= 1 && ratio < 2)
+		else if (ratio >= 1 && ratio < 2)
 		{
 			H_current[i] = H_1[i];
 		}
 
-		if (ratio >= 2 && ratio < 4)
+		else if (ratio >= 2 && ratio < 4)
 		{
 			H_current[i] = H_2[i];
 		}
 
-		if (ratio >= 4)
+		else if (ratio >= 4)
 		{
 			H_current[i] = H_4[i];
 		}
@@ -179,33 +177,33 @@ double lift_force::triangle_lift(double Mah, double ratio, int index)
 			H_current[i] = H_0[i];
 		}
 
-		if (ratio >= 0 && ratio < 1)
+		else if (ratio >= 0 && ratio < 1)
 		{
 			H_current[i] = H_0[i];
 		}
 
-		if (ratio >= 1 && ratio < 2)
+		else if (ratio >= 1 && ratio < 2)
 		{
 			H_current[i] = H_1[i];
 		}
 
-		if (ratio >= 2 && ratio < 3)
+		else if (ratio >= 2 && ratio < 3)
 		{
 			H_current[i] = H_2[i];
 		}
 
-		if (ratio >= 3 && ratio < 4)
+		else if (ratio >= 3 && ratio < 4)
 		{
 			H_current[i] = H_3[i];
 		}
 
-		if (ratio >= 4)
+		else if (ratio >= 4)
 		{
 			H_current[i] = H_4[i];
 		}
 
 
-		if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i >= 1) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+		else if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i >= 1) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
 	}
 
 

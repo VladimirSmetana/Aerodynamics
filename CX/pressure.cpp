@@ -81,43 +81,43 @@ double pressure::head_Cpres(double Mah)
 			H_current[i] = H_0[i];
 		}
 
-		if (elem[0].ratio >= 0.25 && elem[0].ratio < 0.5)
+		else if (elem[0].ratio >= 0.25 && elem[0].ratio < 0.5)
 		{
 			H_current[i] = H_025[i];
 		}
 
-		if (elem[0].ratio >= 0.5 && elem[0].ratio < 1)
+		else if (elem[0].ratio >= 0.5 && elem[0].ratio < 1)
 		{
 			H_current[i] = H_05[i];
 		}
 
-		if (elem[0].ratio >= 1 && elem[0].ratio < 2)
+		else if (elem[0].ratio >= 1 && elem[0].ratio < 2)
 		{
 			H_current[i] = H_1[i];
 		}
 
-		if (elem[0].ratio >= 2 && elem[0].ratio < 2.5)
+		else if (elem[0].ratio >= 2 && elem[0].ratio < 2.5)
 		{
 			H_current[i] = H_2[i];
 		}
 
-		if (elem[0].ratio >= 2.5 && elem[0].ratio < 3)
+		else if (elem[0].ratio >= 2.5 && elem[0].ratio < 3)
 		{
 			H_current[i] = H_3[i];
 		}
 
-		if (elem[0].ratio >= 3 && elem[0].ratio < 4)
+		else if (elem[0].ratio >= 3 && elem[0].ratio < 4)
 		{
 			H_current[i] = H_4[i];
 		}
 
-		if (elem[0].ratio >= 4)
+		else if (elem[0].ratio >= 4)
 		{
 			H_current[i] = H_5[i];
 		}
 
 
-		if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i>=1) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+		else if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i>=1) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
 	}
 
 
