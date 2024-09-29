@@ -23,7 +23,7 @@ int main()
 
     for (int j = 0; j < 5; j++)
     {
-        std::ofstream aero_file("aero_file_" + std::to_string(j) + ".csv");
+        std::ofstream aero_file("results/aero_file_" + std::to_string(j) + ".csv");
         aero_file << "Mah, Cx, Cy\n";
         atmosphere A(arrayH[j] * 1000);
         for (int i = 0; i < 15; i++)
