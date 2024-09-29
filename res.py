@@ -27,6 +27,5 @@ plt.xlabel('Mah')
 plt.ylabel('Cy')
 # plt.title('Cy(Mah)')
 
-
 plt.grid()
 plt.show()
