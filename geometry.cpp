@@ -34,17 +34,13 @@ void geometry::set_elnumber(int n)
 void geometry::set_length(const double &l1, const double &l2, const double &l3)
 {
 	elem[0].elem_length = l1;
-
-
 	elem[1].elem_length = l2;
 	elem[2].elem_length = l3;
-
 	pre_calculations();
 }
 
 void geometry::set_length(const double &l1, const double &l2, const double &l3, const double &l4)
 {
-
 	elem[0].elem_length = l1;
 	elem[1].elem_length = l2;
 	elem[2].elem_length = l3;

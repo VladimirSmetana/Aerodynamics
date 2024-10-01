@@ -28,7 +28,7 @@ struct element
 class geometry
 {
 
-public:
+protected:
 	std::vector<element> elem;
 	double full_length = 0;
 	double full_round_area = 0;
@@ -37,19 +37,20 @@ public:
 	double midel_area;
 	double cif;
 	double num;
-	double const PI = 3.141592653589793;
 
 public:
 	void set_elnumber(int n);
-
 	void set_length(const double &l1, const double &l2, const double &l3);
 	void set_length(const double &l1, const double &l2, const double &l3, const double &l4);
-
 	void set_diameter(const double &d1, const double &d2, const double &d3);
 	void set_diameter(const double &d1, const double &d2, const double &d3, const double &d4);
-
+	
+private:
 	void pre_calculations();
 
+// math
+public:
+	double const PI = 3.141592653589793;
 	double min(double x, double y);
 	double sqr(double x);
 	double rad(double x);	
