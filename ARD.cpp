@@ -5,7 +5,7 @@
 #include <fstream>
 #include "union_stream.h"
 
-int main()
+int main(int argc, char* argv[])
 {
     
     union_stream G;
@@ -29,12 +29,13 @@ int main()
         for (int i = 0; i < 15; i++)
             {
                 G.calculate_CXY(G.rad(attack_angle), arrayMah[i], A.get_SV(), A.get_dyn());
-                aero_file << arrayMah[i] << "," << G.CX << "," << G.CY << "\n";                
+                aero_file << arrayMah[i] << "," << G.CX << "," << G.CY << "\n";          
+                std::cout << G.CY << std::endl;
             }
         std::cout << std::endl;
         aero_file.close();
     }
-    
+    std::cout << argv[0] << std::endl;
 
 }
 

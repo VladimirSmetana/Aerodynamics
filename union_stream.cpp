@@ -9,5 +9,5 @@ void union_stream::calculate_CXY(double angle, double Mah, double SS, double nu)
 	CX += (CY + E);
 	CY -= rad(CY + E);
 	CY *= angle;
-	std_print(CY + E);
+	//std_print(CY + E);
 }
