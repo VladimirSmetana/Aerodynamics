@@ -13,14 +13,14 @@ class ShapeDrawer:
         self.scale_factor = 20.0  # Коэффициент масштабирования
 
         # Semi-ellipse inputs
-        self.semi_ellipse_width_label = ttk.Label(root, text="Semi-Ellipse Width Radius:")
-        self.semi_ellipse_width_label.grid(row=0, column=0, padx=5, pady=5)
+        self.semi_ellipse_width_label = ttk.Label(root, text="Диаметр ГО:")
+        self.semi_ellipse_width_label.grid(row=0, column=0, padx=5, pady=5, sticky="w")
         self.semi_ellipse_width_entry = ttk.Entry(root)
         self.semi_ellipse_width_entry.grid(row=0, column=1, padx=5, pady=5)
-        self.semi_ellipse_width_entry.insert(0, "1.85")
+        self.semi_ellipse_width_entry.insert(0, "3.7")
 
-        self.semi_ellipse_height_label = ttk.Label(root, text="Semi-Ellipse Height Radius:")
-        self.semi_ellipse_height_label.grid(row=1, column=0, padx=5, pady=5)
+        self.semi_ellipse_height_label = ttk.Label(root, text="Высота ГО:")
+        self.semi_ellipse_height_label.grid(row=1, column=0, padx=5, pady=5, sticky="w")
         self.semi_ellipse_height_entry = ttk.Entry(root)
         self.semi_ellipse_height_entry.grid(row=1, column=1, padx=5, pady=5)
         self.semi_ellipse_height_entry.insert(0, "7.0")
@@ -31,23 +31,21 @@ class ShapeDrawer:
         
         a1 = np.array([[3.7, 3.7, 7.0], [3.7, 4.1, 2.0], [4.1, 4.1, 14.0]])
         
-
-        
         for i in range(num_stages):
-            top_base_label = ttk.Label(root, text=f"Trapezoid {i+1} Top Base:")
-            top_base_label.grid(row=2+i*3, column=0, padx=5, pady=5)
+            top_base_label = ttk.Label(root, text=f"Элемент {i+1}. Верхний диаметр:")
+            top_base_label.grid(row=2+i*3, column=0, padx=5, pady=5, sticky="w")
             top_base_entry = ttk.Entry(root)
             top_base_entry.grid(row=2+i*3, column=1, padx=5, pady=5)
             top_base_entry.insert(0, str(a1[i,0]))
 
-            bottom_base_label = ttk.Label(root, text=f"Trapezoid {i+1} Bottom Base:")
-            bottom_base_label.grid(row=3+i*3, column=0, padx=5, pady=5)
+            bottom_base_label = ttk.Label(root, text=f"Элемент {i+1}. Нижний диаметр:")
+            bottom_base_label.grid(row=3+i*3, column=0, padx=5, pady=5, sticky="w")
             bottom_base_entry = ttk.Entry(root)
             bottom_base_entry.grid(row=3+i*3, column=1, padx=5, pady=5)
             bottom_base_entry.insert(0, str(a1[i,1]))
 
-            height_label = ttk.Label(root, text=f"Trapezoid {i+1} Height:")
-            height_label.grid(row=4+i*3, column=0, padx=5, pady=5)
+            height_label = ttk.Label(root, text=f"Элемент {i+1}. Высота:")
+            height_label.grid(row=4+i*3, column=0, padx=5, pady=5, sticky="w")
             height_entry = ttk.Entry(root)
             height_entry.grid(row=4+i*3, column=1, padx=5, pady=5)
             height_entry.insert(0, str(a1[i,2]))
@@ -56,7 +54,7 @@ class ShapeDrawer:
             self.trapezoid_entries.extend([top_base_entry, bottom_base_entry, height_entry])
 
         self.canvas = tk.Canvas(root, width=600, height=800, bg="white")
-        self.canvas.grid(row=14, column=0, columnspan=2, padx=5, pady=5)
+        self.canvas.grid(row=0, column=2, rowspan=15, padx=5, pady=5)
 
         # Bind events
         self.semi_ellipse_width_entry.bind("<KeyRelease>", self.draw_shapes)
@@ -70,7 +68,7 @@ class ShapeDrawer:
         self.canvas.delete("all")
         try:
             # Draw semi-ellipse
-            semi_ellipse_width = float(self.semi_ellipse_width_entry.get()) * self.scale_factor
+            semi_ellipse_width = float(self.semi_ellipse_width_entry.get())/2 * self.scale_factor
             semi_ellipse_height = float(self.semi_ellipse_height_entry.get()) * self.scale_factor
             self.canvas.create_arc(300 - semi_ellipse_width, 50, 300 + semi_ellipse_width, 50 + 2 * semi_ellipse_height, start=0, extent=180, outline="black", fill="black")
 
