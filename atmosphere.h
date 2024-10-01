@@ -7,10 +7,16 @@
 class atmosphere
     {
     private:
-    double H;
-    double po;
-    double Bett, mstep, pp;
-    double tCel, Hmas, vsred, lsred, lamb;
+    double po=0;
+    double Bett=0;
+    double mstep=0;
+    double pp=0;
+    double tCel=0; 
+    double Hmas=0; 
+    double vsred=0; 
+    double lsred=0; 
+    double lamb=0;
+
     double B[4];
     double A[5];
 
@@ -21,7 +27,6 @@ class atmosphere
 
     double TT[15]{288.15,  216.65, 228.65, 270.65, 214.65, 186.65, 203.81, 334.417, 559.6,  695.6,  834.4,  941.9,  984.65, 995.9,  1000};
     double TMM[8]{288.15,  216.65, 228.65, 270.65, 214.65, 186.65, 212.0 , 380.60 };
-    double dHT[14];
 
     double Bst [11]{-0.0065, -0.0065, 0.0000 , 0.0010, 0.0028, 0, -0.0028, -0.0020, 0, 0.0030, 0.0110};
     double Hst [11] {1,  11019, 20630, 32000 , 47350 , 51412, 71802 , 86152 , 95411, 104128, 120000};
@@ -48,20 +53,21 @@ class atmosphere
         hi = 1.4,
         b = 0.365 * pow(10, -9),
         R = 6371000,
-        Hp = (R * H) / (R + H),
+        
         dync = 14.607 * pow(10, -6);
 
 
         double Hs;
+        double Hp;
         double Pap;
         double Mol = Mc, g = gc, T = Tc, Tm = Tc * Mc / Mol, P = pc, n = nc, yyd = yc, a = ac, omega = omegac, dyn = dync;
-        double t;
+        double t = 0;
         double const PI =  3.1415926535;
         double D = 2.66;
         double S = PI*pow(D,2)/4;
 
         public:
-        atmosphere (double H);
+        explicit atmosphere (double H);
 
         double get_T();
         double get_n();

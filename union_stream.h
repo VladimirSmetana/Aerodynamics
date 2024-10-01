@@ -5,7 +5,7 @@
 class union_stream: public drag_force, public lift_force
 {
 private:
-	double E;
+	double E = 0;
 public:
 	double CX;
 	double CY;

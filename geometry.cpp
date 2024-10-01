@@ -4,7 +4,8 @@
 double geometry::min(double x, double y)
 {
 	if (x < y) return x;
-	if (y < x) return y;
+	else if (y < x) return y;
+	else return x;
 }
 
 double geometry::sqr(double x)

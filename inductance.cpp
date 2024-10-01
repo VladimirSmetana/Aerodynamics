@@ -26,7 +26,6 @@ double inductance::E_pressure(double angle, double Mah)
     double E_cone = 0;   
     double E = 0;
 
-	double H_current[N];
 	double H_head[N];
 	double H_cone[N];
 
@@ -44,8 +43,8 @@ double inductance::E_pressure(double angle, double Mah)
 		Hco >> H_head[i];
 		Hco >> H_cone[i];
 
-		if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i >= 1) { E_head = (H_head[i - 1]) + (Mah - Mah_v[i - 1]) * (H_head[i] - H_head[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
-		if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i >= 1) { E_cone = (H_cone[i - 1]) + (Mah - Mah_v[i - 1]) * (H_cone[i] - H_cone[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };        
+		if (i >= 1 && Mah >= Mah_v[i - 1] && Mah < Mah_v[i]) { E_head = (H_head[i - 1]) + (Mah - Mah_v[i - 1]) * (H_head[i] - H_head[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+		if (i >= 1 && Mah >= Mah_v[i - 1] && Mah < Mah_v[i]) { E_cone = (H_cone[i - 1]) + (Mah - Mah_v[i - 1]) * (H_cone[i] - H_cone[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };        
 	}
 
     elem[0].C_ind = (elem[0].CY+rad(2*E_head))*rad(sqr(angle));

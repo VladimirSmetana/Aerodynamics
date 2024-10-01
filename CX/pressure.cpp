@@ -28,7 +28,7 @@ double pressure::bottom_pres(double Mah)
 		{
 			Hco >> Mah_v[i];
 			Hco >> H_current[i];
-			if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i >= 1) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+			if (i >= 1 && Mah >= Mah_v[i - 1] && Mah < Mah_v[i]) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
 		}
 
 		Hco.close();
@@ -195,7 +195,7 @@ double pressure::triangle_Cpres(double Mah, double ratio)
 		}
 
 
-		if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i >= 1) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+		if (i >= 1 && Mah >= Mah_v[i - 1] && Mah < Mah_v[i]) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
 	}
 
 

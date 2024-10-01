@@ -82,7 +82,7 @@ double lift_force::head_lift(double Mah)
 		}
 
 
-		if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i >= 1) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+		if (i >= 1 && Mah >= Mah_v[i - 1] && Mah < Mah_v[i]) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
 	}
 
 

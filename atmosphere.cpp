@@ -2,6 +2,8 @@
 
     atmosphere::atmosphere (double H)
     {
+        Hp = (R * H) / (R + H);
+
         for (int i = 1; i < 15; i++)
         {
             if (H >= HT[i - 1] && H < HT[i]) { T = (TT[i-1])+(H-HT[i-1])*(TT[i]-TT[i-1])/ (HT[i] - HT[i - 1]); };
