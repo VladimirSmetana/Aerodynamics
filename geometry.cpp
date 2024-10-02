@@ -18,7 +18,8 @@ double geometry::rad(double x)
 	return x/57.3;
 }
 
-void geometry::std_print(double x)
+template <typename T>
+void geometry::std_print(T x)
 {
 	std::cout << x << std::endl;
 }

@@ -54,6 +54,6 @@ public:
 	double min(double x, double y);
 	double sqr(double x);
 	double rad(double x);	
-	void std_print(double x);
+	template <typename T> void std_print(T x);
 };
 
