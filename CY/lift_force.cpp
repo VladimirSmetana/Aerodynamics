@@ -102,7 +102,6 @@ double lift_force::un_triangle_lift(double Mah)
 	{
 		if (elem[i].upper_area < elem[i].lower_area)
 		{
-
 			big_rat	= elem[i].ratio;
 			S_rat = elem[i].upper_area / elem[i].lower_area;
 

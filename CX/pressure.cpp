@@ -117,7 +117,7 @@ double pressure::head_Cpres(double Mah)
 		}
 
 
-		else if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i>=1) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+		if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i>=1) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
 	}
 
 
@@ -127,7 +127,6 @@ double pressure::head_Cpres(double Mah)
 
 double pressure::un_triangle_pres(double Mah)
 {
-
 	double res = 0;
 	for (int i = 1; i < elem.size(); i++)
 	{

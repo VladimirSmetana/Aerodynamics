@@ -1,8 +1,31 @@
 #include "atmosphere.h"
 
-    atmosphere::atmosphere (double H)
+
+
+
+    atmosphere::atmosphere (double H):
+            po(0),
+            Bett(0),
+            mstep(0),
+            pp(0),
+            tCel(0), 
+            Hmas(0), 
+            vsred(0), 
+            lsred(0), 
+            lamb(0),
+            ////////////
+            T (Tc), 
+            P (pc), 
+            n (nc), 
+            yyd (yc), 
+            a (ac), 
+            omega (omegac), 
+            dyn (dync)
     {
+        Tm = Tc * Mc / Mol;
         Hp = (R * H) / (R + H);
+        g = gc * pow(R / (R + H), 2);
+        
 
         for (int i = 1; i < 15; i++)
         {
@@ -56,7 +79,6 @@
             lamb = (2.648151 * pow(10, -3) * pow(T, 3 / 2)) / (T + 245.4 * pow(10, -(12 / T)));
             //dyn = lamb / po;
         }
-        g = gc * pow(R / (R + H), 2);
     }
 
 
