@@ -1,6 +1,5 @@
 #include "lift_force.h"
 
-
 double lift_force::calculate_CY(double Mah)
 {
 	return head_lift(Mah) + un_triangle_lift(Mah);
@@ -10,7 +9,7 @@ double lift_force::head_lift(double Mah)
 {
 	if (Mah < 1)
 	{
-		Mah = - sqrt(1 - sqr(Mah)) / elem[0].ratio;
+		Mah = -sqrt(1 - sqr(Mah)) / elem[0].ratio;
 	}
 	else
 	{
@@ -36,12 +35,15 @@ double lift_force::head_lift(double Mah)
 
 	Hco.open("resources/HeadNormal.txt");
 
-
-
 	for (int j = 1; j < elem.size(); j++)
 	{
-		if (elem[j].upper_diameter < elem[j].lower_diameter) { L_cyl /= elem[j].lower_diameter; break; }
-		else L_cyl += elem[j].elem_length;
+		if (elem[j].upper_diameter < elem[j].lower_diameter)
+		{
+			L_cyl /= elem[j].lower_diameter;
+			break;
+		}
+		else
+			L_cyl += elem[j].elem_length;
 	}
 
 	ratio = L_cyl / elem[0].ratio;
@@ -54,7 +56,6 @@ double lift_force::head_lift(double Mah)
 		Hco >> H_1[i];
 		Hco >> H_2[i];
 		Hco >> H_4[i];
-
 
 		if (ratio >= 0 && ratio < 0.5)
 		{
@@ -81,10 +82,11 @@ double lift_force::head_lift(double Mah)
 			H_current[i] = H_4[i];
 		}
 
-
-		if (i >= 1 && Mah >= Mah_v[i - 1] && Mah < Mah_v[i]) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+		if (i >= 1 && Mah >= Mah_v[i - 1] && Mah < Mah_v[i])
+		{
+			C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]);
+		};
 	}
-
 
 	Hco.close();
 	elem[0].CY = C_head;
@@ -102,20 +104,19 @@ double lift_force::un_triangle_lift(double Mah)
 	{
 		if (elem[i].upper_area < elem[i].lower_area)
 		{
-			big_rat	= elem[i].ratio;
+			big_rat = elem[i].ratio;
 			S_rat = elem[i].upper_area / elem[i].lower_area;
 
-			elem[i].CY = triangle_lift(Mah, big_rat, i) - free_triangle_lift(i)* S_rat;
+			elem[i].CY = triangle_lift(Mah, big_rat, i) - free_triangle_lift(i) * S_rat;
 			res += elem[i].CY * elem[i].upper_area / elem.back().upper_area;
 		}
 	}
 	return res;
 }
 
-
 double lift_force::free_triangle_lift(int index)
 {
-	double arg = elem[index].lower_diameter / 2 /(elem[index].virtual_length - elem[index].elem_length);
+	double arg = elem[index].lower_diameter / 2 / (elem[index].virtual_length - elem[index].elem_length);
 	double Q = atan(arg);
 	return (2 / 57.3) * sqr(cos(Q));
 }
@@ -124,7 +125,7 @@ double lift_force::triangle_lift(double Mah, double ratio, int index)
 {
 	if (Mah < 1)
 	{
-		Mah = - sqrt(1 - sqr(Mah)) / ratio;
+		Mah = -sqrt(1 - sqr(Mah)) / ratio;
 	}
 	else
 	{
@@ -144,19 +145,21 @@ double lift_force::triangle_lift(double Mah, double ratio, int index)
 
 	double L_cyl = 0;
 
-
-
-
 	std::ifstream Hco;
 
 	Hco.open("resources/TriangleNormal.txt");
 
 	double C_head = 0;
 
-	for (int j = index+1; j < elem.size(); j++)
+	for (int j = index + 1; j < elem.size(); j++)
 	{
-		if (elem[j].upper_diameter < elem[j].lower_diameter) { L_cyl /= elem[j].lower_diameter; break; }
-		else L_cyl += elem[j].elem_length;
+		if (elem[j].upper_diameter < elem[j].lower_diameter)
+		{
+			L_cyl /= elem[j].lower_diameter;
+			break;
+		}
+		else
+			L_cyl += elem[j].elem_length;
 	}
 
 	ratio = L_cyl / ratio;
@@ -170,7 +173,6 @@ double lift_force::triangle_lift(double Mah, double ratio, int index)
 		Hco >> H_3[i];
 		Hco >> H_4[i];
 
-			
 		if (ratio > 0 && ratio < 1)
 		{
 			H_current[i] = H_0[i];
@@ -201,10 +203,11 @@ double lift_force::triangle_lift(double Mah, double ratio, int index)
 			H_current[i] = H_4[i];
 		}
 
-
-		else if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i >= 1) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+		else if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i >= 1)
+		{
+			C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]);
+		};
 	}
-
 
 	Hco.close();
 	return C_head;

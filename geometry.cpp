@@ -3,9 +3,12 @@
 
 double geometry::min(double x, double y)
 {
-	if (x < y) return x;
-	else if (y < x) return y;
-	else return x;
+	if (x < y)
+		return x;
+	else if (y < x)
+		return y;
+	else
+		return x;
 }
 
 double geometry::sqr(double x)
@@ -15,7 +18,7 @@ double geometry::sqr(double x)
 
 double geometry::rad(double x)
 {
-	return x/57.3;
+	return x / 57.3;
 }
 
 template <typename T>
@@ -26,12 +29,10 @@ void geometry::std_print(T x)
 
 void geometry::set_elnumber(int n)
 {
-	//length.resize(n);
-	//diameter.resize(n);
+	// length.resize(n);
+	// diameter.resize(n);
 	elem.resize(n);
 }
-
-
 
 void geometry::set_length(const double &l1, const double &l2, const double &l3)
 {
@@ -93,21 +94,19 @@ void geometry::pre_calculations()
 		}
 
 		elem[i].upper_area = PI * pow(elem[i].upper_diameter, 2) / 4;
-		elem[i].lower_area = PI * pow(elem[i].lower_diameter,2)/4;
-		elem[i].virtual_length = elem[i].elem_length + elem[i].elem_length / (elem[i].lower_diameter / elem[i].upper_diameter  - 1);
+		elem[i].lower_area = PI * pow(elem[i].lower_diameter, 2) / 4;
+		elem[i].virtual_length = elem[i].elem_length + elem[i].elem_length / (elem[i].lower_diameter / elem[i].upper_diameter - 1);
 
 		full_length += elem[i].elem_length;
 		full_round_area += elem[i].round_area;
 
-
-		if (elem[i].upper_diameter < elem[i].lower_diameter && abs(elem[i].upper_diameter)>0.1)
+		if (elem[i].upper_diameter < elem[i].lower_diameter && abs(elem[i].upper_diameter) > 0.1)
 		{
 			elem[i].ratio = elem[i].virtual_length / elem[i].lower_diameter;
 		}
-		else 
+		else
 		{
 			elem[i].ratio = elem[i].elem_length / elem[i].lower_diameter;
-
 		}
 	}
 	full_ratio = full_length / elem.back().upper_diameter;

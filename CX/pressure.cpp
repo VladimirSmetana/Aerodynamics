@@ -1,17 +1,16 @@
 #include "pressure.h"
 double pressure::prescalc(double Mah)
 {
-			                	               
+
 	return un_triangle_pres(Mah) + head_Cpres(Mah) + bottom_pres(Mah);
 }
-
 
 double pressure::bottom_pres(double Mah)
 {
 
 	if (Mah < 1)
 	{
-		return 0.0155 / sqrt(cif*num*full_ratio);
+		return 0.0155 / sqrt(cif * num * full_ratio);
 	}
 	else
 	{
@@ -28,7 +27,10 @@ double pressure::bottom_pres(double Mah)
 		{
 			Hco >> Mah_v[i];
 			Hco >> H_current[i];
-			if (i >= 1 && Mah >= Mah_v[i - 1] && Mah < Mah_v[i]) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+			if (i >= 1 && Mah >= Mah_v[i - 1] && Mah < Mah_v[i])
+			{
+				C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]);
+			};
 		}
 
 		Hco.close();
@@ -53,13 +55,11 @@ double pressure::head_Cpres(double Mah)
 	double H_4[N];
 	double H_5[N];
 
-
 	std::ifstream Hco;
 
 	Hco.open("resources/HeadPressure.txt");
 
 	double C_head = 0;
-
 
 	for (int i = 0; i < N; i++)
 	{
@@ -74,8 +74,6 @@ double pressure::head_Cpres(double Mah)
 		Hco >> H_4[i];
 		Hco >> H_5[i];
 
-
-		
 		if (elem[0].ratio >= 0 && elem[0].ratio < 0.25)
 		{
 			H_current[i] = H_0[i];
@@ -116,10 +114,11 @@ double pressure::head_Cpres(double Mah)
 			H_current[i] = H_5[i];
 		}
 
-
-		if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i>=1) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+		if (Mah >= Mah_v[i - 1] && Mah < Mah_v[i] && i >= 1)
+		{
+			C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]);
+		};
 	}
-
 
 	Hco.close();
 	return C_head;
@@ -156,7 +155,6 @@ double pressure::triangle_Cpres(double Mah, double ratio)
 
 	double C_head = 0;
 
-
 	for (int i = 0; i < N; i++)
 	{
 		Hco >> Mah_v[i];
@@ -166,7 +164,6 @@ double pressure::triangle_Cpres(double Mah, double ratio)
 		Hco >> H_3[i];
 		Hco >> H_4[i];
 		Hco >> H_5[i];
-
 
 		if (ratio >= 1.5 && ratio < 2)
 		{
@@ -193,10 +190,11 @@ double pressure::triangle_Cpres(double Mah, double ratio)
 			H_current[i] = H_5[i];
 		}
 
-
-		if (i >= 1 && Mah >= Mah_v[i - 1] && Mah < Mah_v[i]) { C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]); };
+		if (i >= 1 && Mah >= Mah_v[i - 1] && Mah < Mah_v[i])
+		{
+			C_head = (H_current[i - 1]) + (Mah - Mah_v[i - 1]) * (H_current[i] - H_current[i - 1]) / (Mah_v[i] - Mah_v[i - 1]);
+		};
 	}
-
 
 	Hco.close();
 

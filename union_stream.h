@@ -2,13 +2,13 @@
 #include "CX/drag_force.h"
 #include "CY/lift_force.h"
 
-class union_stream: public drag_force, public lift_force
+class union_stream : public drag_force, public lift_force
 {
 private:
 	double E = 0;
+
 public:
 	double CX;
 	double CY;
 	void calculate_CXY(double angle, double Mah, double SS, double nu);
 };
-

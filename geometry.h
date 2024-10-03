@@ -4,7 +4,6 @@
 #include <cmath>
 #include "atmosphere.h"
 
-
 struct element
 {
 	double upper_diameter;
@@ -23,7 +22,6 @@ struct element
 	double CX;
 	double CY;
 };
-
 
 class geometry
 {
@@ -44,16 +42,16 @@ public:
 	void set_length(const double &l1, const double &l2, const double &l3, const double &l4);
 	void set_diameter(const double &d1, const double &d2, const double &d3);
 	void set_diameter(const double &d1, const double &d2, const double &d3, const double &d4);
-	
+
 private:
 	void pre_calculations();
 
-// math
+	// math
 public:
 	double const PI = 3.141592653589793;
 	double min(double x, double y);
 	double sqr(double x);
-	double rad(double x);	
-	template <typename T> void std_print(T x);
+	double rad(double x);
+	template <typename T>
+	void std_print(T x);
 };
-

@@ -3,8 +3,8 @@
 #include <fstream>
 #include <string>
 
-class inductance: virtual public geometry
+class inductance : virtual public geometry
 {
-    public:
+public:
     double E_pressure(double angle, double Mah);
 };
