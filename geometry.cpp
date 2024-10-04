@@ -1,7 +1,7 @@
 #include "geometry.h"
 #include <math.h>
 
-double geometry::min(double x, double y)
+double geometry::min(const double &x, const double &y)
 {
 	if (x < y)
 		return x;
@@ -11,12 +11,12 @@ double geometry::min(double x, double y)
 		return x;
 }
 
-double geometry::sqr(double x)
+double geometry::sqr(const double &x)
 {
 	return x * x;
 }
 
-double geometry::rad(double x)
+double geometry::rad(const double &x)
 {
 	return x / 57.3;
 }
@@ -27,7 +27,7 @@ void geometry::std_print(T x)
 	std::cout << x << std::endl;
 }
 
-void geometry::set_elnumber(int n)
+void geometry::set_elnumber(const int &n)
 {
 	// length.resize(n);
 	// diameter.resize(n);

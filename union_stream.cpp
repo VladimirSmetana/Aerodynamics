@@ -1,6 +1,6 @@
 #include "union_stream.h"
 
-void union_stream::calculate_CXY(double angle, double Mah, double SS, double nu)
+void union_stream::calculate_CXY(const double &angle, const double &Mah, const double &SS, const double &nu)
 {
 	CX = calculate_CX(Mah, SS, nu);
 	CY = calculate_CY(Mah);

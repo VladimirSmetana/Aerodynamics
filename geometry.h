@@ -37,7 +37,7 @@ protected:
 	double num;
 
 public:
-	void set_elnumber(int n);
+	void set_elnumber(const int &n);
 	void set_length(const double &l1, const double &l2, const double &l3);
 	void set_length(const double &l1, const double &l2, const double &l3, const double &l4);
 	void set_diameter(const double &d1, const double &d2, const double &d3);
@@ -49,9 +49,9 @@ private:
 	// math
 public:
 	double const PI = 3.141592653589793;
-	double min(double x, double y);
-	double sqr(double x);
-	double rad(double x);
+	double min(const double &x, const double &y);
+	double sqr(const double &x);
+	double rad(const double &x);
 	template <typename T>
 	void std_print(T x);
 };

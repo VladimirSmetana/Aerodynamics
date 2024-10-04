@@ -5,10 +5,10 @@
 class union_stream : public drag_force, public lift_force
 {
 private:
-	double E = 0;
+	double E = NULL;
 
 public:
 	double CX;
 	double CY;
-	void calculate_CXY(double angle, double Mah, double SS, double nu);
+	void calculate_CXY(const double &angle, const double &Mah, const double &SS, const double &nu);
 };

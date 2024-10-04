@@ -1,6 +1,11 @@
 #include "inductance.h"
 
-double inductance::E_pressure(double angle, double Mah)
+inductance::inductance() : L_cyl(0),
+						   E_head(0),
+						   E_cone(0),
+						   E(0) {};
+
+double inductance::E_pressure(const double &angle, double Mah)
 {
 
 	if (Mah < 1)
@@ -11,20 +16,6 @@ double inductance::E_pressure(double angle, double Mah)
 	{
 		Mah = sqrt(sqr(Mah) - 1) / elem[0].ratio;
 	}
-
-	const int N = 10;
-	// double C_head = 0.035;
-	double L_cyl = 0;
-
-	double ratio;
-
-	double Mah_v[N];
-	double E_head = 0;
-	double E_cone = 0;
-	double E = 0;
-
-	double H_head[N];
-	double H_cone[N];
 
 	std::ifstream Hco;
 

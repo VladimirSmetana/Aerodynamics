@@ -17,10 +17,9 @@ int main()
     // const double velocity = 400;
     // const double Mah = 0.1;//velocity / A.get_SV();
 
-    const double attack_angle = 5; // сделай разные углы
-
-    const double arrayMah[15]{0.1, 0.3, 0.5, 0.7, 0.9, 1.0, 1.3, 1.5, 2, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0};
-    const double arrayH[5]{0.1, 10, 20, 40, 60};
+    static constexpr double arrayMah[15]{0.1, 0.3, 0.5, 0.7, 0.9, 1.0, 1.3, 1.5, 2, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0};
+    static constexpr double attack_angle [5] {2, 4, 6, 8, 10}; 
+    static constexpr double arrayH[5]{0.1, 10, 20, 40, 60};
 
     for (int j = 0; j < 5; j++)
     {
@@ -29,7 +28,7 @@ int main()
         atmosphere A(arrayH[j] * 1000);
         for (int i = 0; i < 15; i++)
         {
-            G.calculate_CXY(G.rad(attack_angle), arrayMah[i], A.get_SV(), A.get_dyn());
+            G.calculate_CXY(G.rad(attack_angle[j]), arrayMah[i], A.get_SV(), A.get_dyn());
             aero_file << arrayMah[i] << "," << G.CX << "," << G.CY << "\n";
             std::cout << G.CY << std::endl;
         }
