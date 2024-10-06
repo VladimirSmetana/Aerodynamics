@@ -54,10 +54,7 @@ atmosphere::atmosphere(double H) : po(0),
         /// Введение атмосферы
 
         /// Коэффициенты полинома молярной массы
-        B[0] = 46.9083;
-        B[1] = -29.71210 * pow(10, -5);
-        B[2] = 12.08693 * pow(10, -10);
-        B[3] = -1.85675 * pow(10, -15);
+
 
         /// Молярная масса
         Mol = Mc;
@@ -87,9 +84,9 @@ atmosphere::atmosphere(double H) : po(0),
         Hmas = (RB / Mol) * (T / g);
         a = 20.046796 * sqrt(T);
         vsred = 145.50685 * T / Mol;
-        lsred = 2.332376 * pow(10, -5) * T / P;
-        omega = 6.238629 * pow(10, 6) * P / sqrt(T * Mol);
-        lamb = (2.648151 * pow(10, -3) * pow(T, 3 / 2)) / (T + 245.4 * pow(10, -(12 / T)));
+        lsred = 2.332376e-5 * T / P;
+        omega = 6.238629e6 * P / sqrt(T * Mol);
+        lamb = (2.648151e-3 * pow(T, 3 / 2)) / (T + 245.4 * pow(10, -(12 / T)));
         // dyn = lamb / po;
     }
 }
