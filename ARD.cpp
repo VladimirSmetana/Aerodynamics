@@ -14,8 +14,8 @@ int main()
 
     union_stream G;
     G.set_elnumber(4);
-    G.set_diameter(3.7, 3.7, 4.1, 4.1);
-    G.set_length(7, 7, 2, 14);
+    G.set_diameter({3.7, 3.7, 4.1, 4.1});
+    G.set_length({7, 7, 2, 14});
 
     // const double altitude = 3;
     // const double velocity = 400;

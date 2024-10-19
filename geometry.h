@@ -38,10 +38,8 @@ protected:
 
 public:
 	void set_elnumber(const int &n);
-	void set_length(const double &l1, const double &l2, const double &l3);
-	void set_length(const double &l1, const double &l2, const double &l3, const double &l4);
-	void set_diameter(const double &d1, const double &d2, const double &d3);
-	void set_diameter(const double &d1, const double &d2, const double &d3, const double &d4);
+	void set_length(const std::vector<double>& lengths);
+	void set_diameter(const std::vector<double>& diameters);
 
 private:
 	void pre_calculations();
