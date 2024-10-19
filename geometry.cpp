@@ -1,15 +1,6 @@
 #include "geometry.h"
 #include <math.h>
 
-double geometry::min(const double &x, const double &y)
-{
-	if (x < y)
-		return x;
-	else if (y < x)
-		return y;
-	else
-		return x;
-}
 
 double geometry::sqr(const double &x)
 {

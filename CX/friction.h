@@ -1,5 +1,6 @@
 #pragma once
 #include "../geometry.h"
+#include <algorithm>
 class friction : virtual public geometry
 {
 private:

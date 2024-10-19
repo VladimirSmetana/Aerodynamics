@@ -11,7 +11,7 @@ void friction::stream_calc(double Re, double Mah)
 	else if (Re > 485000 && Re < 10000000)
 	{
 		n = 5 + (1.3 + 0.6 * Mah * (1 - 0.25 * pow(Mah, 2))) * sqrt(1 - pow(log10((h_s / full_length * Re) - 1) / (2.2 + 0.08 * pow(Mah, 2) / (1 + 0.312 * pow(Mah, 2))), 2));
-		x_t = min(pow(10, n) / Re, elem[0].elem_length / full_length);
+		x_t = std::min(pow(10, n) / Re, elem[0].elem_length / full_length);
 
 		if (x_t >= 1)
 		{

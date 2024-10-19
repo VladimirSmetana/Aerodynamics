@@ -39,6 +39,7 @@ protected:
 public:
 	void set_elnumber(const int &n);
 	void set_length(const std::vector<double>& lengths);
+
 	void set_diameter(const std::vector<double>& diameters);
 
 private:
@@ -47,7 +48,7 @@ private:
 	// math
 public:
 	double const PI = 3.141592653589793;
-	double min(const double &x, const double &y);
+
 	double sqr(const double &x);
 	double rad(const double &x);
 	template <typename T>
