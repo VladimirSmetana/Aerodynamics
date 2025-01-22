@@ -20,8 +20,6 @@ void geometry::std_print(T x)
 
 void geometry::set_elnumber(const int &n)
 {
-	// length.resize(n);
-	// diameter.resize(n);
 	elem.resize(n);
 }
 

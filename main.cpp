@@ -11,7 +11,6 @@
 
 int main()
 {
-
     union_stream G;
     G.set_elnumber(4);
     G.set_diameter({3.7, 3.7, 4.1, 4.1});
