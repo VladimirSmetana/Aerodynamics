@@ -18,7 +18,7 @@ add_library(pressure CX/pressure.h CX/pressure.cpp)
 add_library(drag_force CX/drag_force.h CX/drag_force.cpp)
 add_library(inductance inductance.h inductance.cpp)
 
-add_executable(ARD ARD.cpp)
+add_executable(ARD main.cpp)
 
 target_include_directories(ARD PUBLIC resources)
 

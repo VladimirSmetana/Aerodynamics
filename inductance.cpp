@@ -55,6 +55,5 @@ double inductance::E_pressure(const double &angle, double Mah)
 	}
 
 	Hco.close();
-	// std_print(E);
 	return E;
 }
